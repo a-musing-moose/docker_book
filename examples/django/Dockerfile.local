@@ -1,0 +1,12 @@
+FROM python:3.6.4-alpine
+
+ENV PYTHONUNBUFFERED 1
+
+# Create the directory layout and virtual environment
+RUN mkdir /venv /app && python3.6 -m venv /venv
+
+RUN apk add --no-cache postgresql-libs build-base linux-headers postgresql-dev git
+COPY app/requirements /app/requirements
+RUN /venv/bin/pip install -r /app/requirements/local.txt
+WORKDIR /app
+CMD /venv/bin/python manage.py runserver 0.0.0.0:8000

@@ -1,0 +1,4 @@
+__pycache__
+_build_html
+.pytest_cache
+*.pyc

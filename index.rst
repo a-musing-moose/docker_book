@@ -28,6 +28,7 @@ This is my journey to adapting my somewhat opinionated Python_ workflow to a wor
     ci
     production
     glossary
+    resources
     todo
 
 

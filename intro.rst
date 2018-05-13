@@ -17,14 +17,16 @@ We were not only teaching them Python and Django but introducing modern developm
 example, we introduced GIT (they previously used SVN), Test Driven Development, RESTful service design and whole
 bunch of other concepts.
 
-Now I have been a web developer for around half my life now and have worked with Python and Django for approaching 50%
+I have been a web developer for around half my life now and have worked with Python and Django for approaching 50%
 of that. So working with relative newcomers to web development, even those with development experience has been a
 really interesting experience. Things are not always the way you remember them from your time coming up. Knowledge that
-you take for granted can seem like odd gaps in others. Whilst this is clearly not true, a few things did surprise me.
+you take for granted can seem like odd gaps in the knowledge of others. Whilst this is clearly not true, a few things
+did surprise me.
 
 Whilst the raw technical knowledge needed to become productive in a new programming language and framework was an
-interesting topic in itself, I found it was the development process itself that has left me in a rather contemplative
-mood. An area that is broader than just those being trained, but also new starters and junior developers.
+interesting topic in itself, I found it was the teching development processes that has left me in a rather
+contemplative mood. An area that is broader than just those being trained extending also to new starters and
+junior developers.
 
 A lot of time is given to discussions around *best practice*. But given that this is often not well defined, can be
 opinionated and changes over time how do you impart this information to those learning whilst allowing them to feel
@@ -34,11 +36,11 @@ A good example is Python virtual environments. Any seasoned Python developer can
 and *best practice* but ask any 2 how they manage them you are likely to get 3 different answers. From just
 ``virtualenv``, to ``virtualenv-wrapper``, ``pyenv`` with ``pyenv-virtualenv`` right through to the relatively new
 ``pipenv``. Each approach has it's pluses and minuses and each developer will have gone through a long process to hone
-their particular approach. This is not something easily conveyed to new starters.
+their particular approach. This is not something easily conveyed to new starters and the breadth of options offputting
 
 This is just one of the many, many things a learner is faced with. The overall process is much bigger. Things like
 testing (TDD, BDD, Contract etc.), Continuous Integration, Continuous Deployment, Containers, Configuration Management
-and Orchestration. Whilst no one would expect a new starter to know all the things in short order, they will expect
+and Orchestration. Whilst no one would expect a new starter to know all the things immediately, they will expect
 people to be able to be productive as soon a possible. Not just from the company financial point of view but for the
 satisfaction of the person themselves. No one wants to feel like they cannot make a positive contribution.
 
@@ -47,7 +49,7 @@ Whilst their major selling point was a supremely simple deployment system using 
 delving into was how they did it, what their infrastructure looked like and trying to work out what a dyno_ actually
 was.
 
-It turns out that Heroku_ make extensive use of LXC_, a Linux containers implementation which helps keep running
+It turns out that Heroku_ made extensive use of LXC_, a Linux containers implementation which helps keep running
 processes isolated from each other and allows for restricting resources to each of those processes. This allowed them
 to pack many more things onto each of their servers as the use of containers allowed isolation without the overhead of
 a fully blown Virtual Machine.
@@ -59,7 +61,7 @@ was a little onerous. So I put it to bed and went back to using Vagrant_ for my 
 
 Not long after this, another start-up with a similar offering came to my attention, dotCloud_. Amongst other things,
 they had a product called Docker_. At the time, Docker_ was a fairly simple wrapper around LXC_. It worked on Linux
-only (which was fine with me) but offered a *much* simpler workflow than plain LXC_.
+only (which was fine with me) but offered a *much* simpler workflow than working with LXC_ directly.
 
 So useful was this tool that it was eventually spun out as it's own company and the rest is history.
 

@@ -1,0 +1,33 @@
+version: "3"
+services:
+  web:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    environment:
+      DEBUG: "True"
+    volumes:
+      - ./app:/app
+    ports:
+      - "8000:8000"
+      - "6899:6899"
+    links:
+      - db
+    labels:
+      app.rind: "source /venv/bin/activate"
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_DB: dev_db
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: dev_password
+    ports:
+       - "5432:5432"
+  docs:
+    image: moose/sphinx-server
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./docs:/docs

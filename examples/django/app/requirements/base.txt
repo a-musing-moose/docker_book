@@ -1,0 +1,4 @@
+django~=2.0.1
+envparse~=0.2.0
+psycopg2~=2.7.3.2
+uwsgi~=2.0.15

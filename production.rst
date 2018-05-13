@@ -19,9 +19,9 @@ If we choose the  `official Docker registry`_ then the only change we need to ma
 we provide the Docker_ engine running on our production environment access credentials to authenticate itself and gain
 access to our private images.
 
-Docker_ are also nice enough to provide an implementation of the `Docker registry`_ packaged up as a Docker_ image for
-us to run. This take a little configuration, especially if we want to ensure that it is fully secured with SSL
-certificates. But a paid for account on the `official Docker registry`_ is not an option then this is a good
+Docker_ have also been nice enough to provide an implementation of the `Docker registry`_ packaged up as a Docker_
+image for us to run. This take a little configuration, especially if we want to ensure that it is fully secured with
+SSL certificates. But a paid for account on the `official Docker registry`_ is not an option then this is a good
 alternative.
 
 
@@ -131,7 +131,7 @@ Scaling your service instances up or down is equally as easy:
 
 
 As with running Docker_ containers locally, defining services by hand each time can be repeatitive and error prone. As
-you have seen, when working locally you can created a ``docker-compose.yml`` to allow you to spin up and configure
+you have seen, when working locally you can create a ``docker-compose.yml`` file to allow you to spin up and configure
 multiple containers locally. That same file can be use to deploy and configure a series of services. Again, all the
 tools you need for this are already installed as part of Docker_ itelf.
 
@@ -246,7 +246,7 @@ toward small, discrete functions that are independently deployable.
 
 As with ``PaaS`` there are a number of projects that provide their own interpretation of ``Faas``. A good example is
 open-faas_, which provides a number of services that can be deployed via a Docker_ swarm stackfile, or onto a
-Kubernetes_ cluster. These services provide a ``FaaS`` setup similar to the combination of `AWS` Lambda`_ and
+Kubernetes_ cluster. These services provide a ``FaaS`` setup similar to the combination of `AWS Lambda`_ and
 `AWS API Gateway`_. Whilst it doesn't have the breadth of functionality or integrations that are provided by some of
 the commercial suppliers, it does avoid vendor lock-in and is more flexible in terms of language and runtime support.
 Open-faas_ effectively supports any language or runtime that can run in a Docker_ container. Other examples in this

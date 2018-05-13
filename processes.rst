@@ -25,7 +25,7 @@ slow, even with Docker_ caching intermediate layers.
 
 What you really want is to be able to install that new dependency in the existing virtual environment within you
 already running container. This is particularly true when what you want to install is something like a debugging tool
-you are need just to help resolve a specific issue, or when trialling new packages.
+you need just to help resolve a specific issue, or when trialling new packages.
 
 Best practice with Docker_ is that your containers should run one thing or at least only 1 *type* of thing. For example
 our Django_ development environment runs the Django_ development server. Given these one off tasks are ephemeral, that
@@ -75,7 +75,7 @@ something like:
 
 This can get a little cumbersome to work with, not only do you have to remember (or work out) the name of the container
 you currently have running but also all the command line switches like ``-it``. So to make things a little easy I have
-put together a little tool call rind_ that takes care of a lot of this for you.
+put together a little tool called Rind_ that takes care of a lot of this for you.
 
 Rind
 ----

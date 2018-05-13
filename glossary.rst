@@ -14,8 +14,8 @@ Glossary
     OS
         Operating System
 
-    Containers
-        A light weight process isolation system
+    Container
+        A process running in a light weight isolation system
 
     PaaS
         Platform as a Service.
@@ -34,3 +34,6 @@ Glossary
 
     Docker
         The company behind the Docker Engine, and other tooling. Informally used to refer to the Docker Engine itself
+
+    Image
+        The blueprints for a container

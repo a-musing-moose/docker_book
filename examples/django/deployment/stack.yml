@@ -1,0 +1,20 @@
+version: "3"
+services:
+  web:
+    image: moose/django-base
+    environment:
+      DEBUG: "False"
+    ports:
+      - "80:80"
+    config:
+      - allowed_hosts
+    secrets:
+      - database_url
+
+config:
+  allowed_hosts:
+    file: deployment/config/allowed_hosts
+    target: /var/run/config/allowed_hosts
+secrets:
+  database_url:
+    file: deployment/secrets/database_url

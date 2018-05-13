@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    volumes:
+      - venv:/venv
+  anaconda:
+    image: python:3.6-alpine
+    volumes:
+      - ./app:/app
+      - /home/jmoss/.config/sublime-text-3/Packages/Anaconda:/opt/anaconda
+      - venv:/venv
+    ports:
+      - "19360:19360"
+    # Ensure `start` script below is marked as executable!
+    entrypoint: /opt/anaconda/anaconda_server/docker/start /venv/bin/python 19360 base /app,/venv
+
+volumes:
+  venv: {}
